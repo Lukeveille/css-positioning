@@ -11,6 +11,7 @@ html {
   line-height: 1.5; /* this is a multiple of the font size (1.5 * 16px = 24px) */
 }
 
+/* Elements */
 body {
   margin: 0;
 }
@@ -22,8 +23,47 @@ img {
 figure {
   margin: 0;
 }
+article {
+  min-width: 635px;
+}
 
+/* Classes */
 .film {
   width: 50%;
   margin: 40px auto;
+}
+.film-poster {
+  margin: 16px;
+  min-width: 185px;
+}
+.film-poster,
+.film-details {
+  position: relative;
+}
+.fa-clock-o,
+.fa-heart,
+.fa-bookmark,
+.fa-star {
+  color: red;
+}
+.action-watch-later {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  z-index: 10;
+}
+.action-like {
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 8px;
+}
+.film {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  border: 1px solid #eeeeee;
+}
+.film-description {
+  margin-right: 16px;
 }
